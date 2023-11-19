@@ -1,0 +1,47 @@
+.transition-graph * {
+    box-sizing: border-box;
+}
+
+.transition-graph {
+    border: 1px solid black;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+    text-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.transition-node {
+    display: inline-table;
+    height: 7rem;
+}
+
+.transition, .transition-word {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.transition > * {
+    width: 3em;
+    display: block;
+}
+
+.transition-player {
+    display: inline-block;
+    font-size: 0.6em;
+}
+
+.transition-letter {
+    vertical-align: bottom !important;
+}
+
+.transition-word {
+    border: 2px solid black;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.terminal-word {
+    border: 8px double black;
+}

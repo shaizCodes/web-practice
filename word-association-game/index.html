@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulated Word Association Game</title>
+    <!-- Internet Explorer and Microsoft Edge Support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description -->
+    <meta name="description" content="web based word association or chaining game automaton somewhat demonstrating my learning in Theory of Automata">
+    <!-- Keywords -->
+    <meta name="keywords" content="word, chaining, association, game, automaton, theory, automata">
+    <!-- Tab or Bookmark Icon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Custom External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-setup-section">
+        <div>
+            <label for="players-selection">Select Number of Players:</label>
+            <select id="players-selection" name="players-selection">
+                <!-- Options will be added dynamically using JavaScript (JS) -->
+            </select>
+            <div id="players-section">
+                <fieldset>
+                    <legend>Players</legend>
+                    <ul id="players-list">
+                        <!-- players will be added dynamically based on <select id="players-selection"> value using JavaScript (JS) -->
+                    </ul>
+                </fieldset>
+            </div>
+        </div>
+        <div id="categories-container">
+            <span>Check Category of Words:</span>
+            <!-- Checkboxes will be added dynamically using JavaScript (JS)-->
+        </div>
+        <div><button id="start-button" type="button">Start Game</button></div>
+    </div>
+
+    <hr />
+
+    <div id="transition-section">
+        <p>Starting Word: <span id="initial-word"></span></p>
+        <fieldset>
+            <legend>Transition</legend>
+            <fieldset>
+                <legend>Transition Table</legend>
+                <table id="transition-table" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Player</th>
+                            <th>Letter</th>
+                            <th>Word</th>
+                        </tr>
+                    </thead>
+                    <tbody id="players">
+                        <!-- rows and cells will be added dynamically using JavaScript (JS)-->
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Transition Graph</legend>
+                <div class="transition-graph">
+                    <!-- Elements will be added dynamically using JavaScript (JS) -->
+                </div>
+            </fieldset>
+        </fieldset>
+    </div>
+
+    <div id="result-section">
+        <fieldset>
+            <legend>Results</legend>
+            <p>Winner: <strong id="winner">...</strong></p>
+            <p>Transition: <strong id="transition">...</strong></p>
+        </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
