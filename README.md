@@ -1,2 +1,4 @@
-# web-practice
-Personal repository for the sake of learning frontend web development.
+# Web Practice
+Personal repository to practise basic web development projects.
+## Sample Projects
+- Word Association Game
